@@ -6,12 +6,9 @@ $('#currentDay').text(now.format('dddd, MMMM Do YYYY'));
 
 // block out current hour in the schedule in red and text "current hour"
 
-
-// let user save data to local storage on click 
-// let user remove from local storage on click 
-//icon changes on click
 // // nine
 $('#nineplus').on('click', function(event) {
+    //icon changes on click
     $('#nineplus').css('display','none');
     $('#nineex').css('display','block');
     // add to local storage
@@ -19,8 +16,11 @@ $('#nineplus').on('click', function(event) {
     localStorage.setItem('nine', text);
 });
 $('#nineex').on('click', function(event) {
+    //icon changes on click
     $('#nineex').css('display','none');
     $('#nineplus').css('display','block');
+    // remove from local storage 
+    localStorage.removeItem('nine');
 });
 // //ten
 $('#tenplus').on('click', function(event) {
@@ -32,6 +32,7 @@ $('#tenplus').on('click', function(event) {
 $('#tenex').on('click', function(event) {
     $('#tenex').css('display','none');
     $('#tenplus').css('display','block');
+    localStorage.removeItem('ten');
 });
 // // eleven
 $('#elevenplus').on('click', function(event) {
@@ -43,6 +44,7 @@ $('#elevenplus').on('click', function(event) {
 $('#elevenex').on('click', function(event) {
     $('#elevenex').css('display','none');
     $('#elevenplus').css('display','block');
+    localStorage.removeItem('eleven');
 });
 // // noon
 $('#noonplus').on('click', function(event) {
@@ -54,6 +56,7 @@ $('#noonplus').on('click', function(event) {
 $('#noonex').on('click', function(event) {
     $('#noonex').css('display','none');
     $('#noonplus').css('display','block');
+    localStorage.removeItem('noon');
 });
 // // one
 $('#oneplus').on('click', function(event) {
@@ -65,6 +68,7 @@ $('#oneplus').on('click', function(event) {
 $('#oneex').on('click', function(event) {
     $('#oneex').css('display','none');
     $('#oneplus').css('display','block');
+    localStorage.removeItem('one');
 });
 // // two
 $('#twoplus').on('click', function(event) {
@@ -76,6 +80,7 @@ $('#twoplus').on('click', function(event) {
 $('#twoex').on('click', function(event) {
     $('#twoex').css('display','none');
     $('#twoplus').css('display','block');
+    localStorage.removeItem('two');
 });
 // // three
 $('#threeplus').on('click', function(event) {
@@ -87,6 +92,7 @@ $('#threeplus').on('click', function(event) {
 $('#threeex').on('click', function(event) {
     $('#threeex').css('display','none');
     $('#threeplus').css('display','block');
+    localStorage.removeItem('three');
 });
 // // four
 $('#fourplus').on('click', function(event) {
@@ -98,6 +104,7 @@ $('#fourplus').on('click', function(event) {
 $('#fourex').on('click', function(event) {
     $('#fourex').css('display','none');
     $('#fourplus').css('display','block');
+    localStorage.removeItem('four');
 });
 // // five
 $('#fiveplus').on('click', function(event) {
@@ -109,4 +116,5 @@ $('#fiveplus').on('click', function(event) {
 $('#fiveex').on('click', function(event) {
     $('#fiveex').css('display','none');
     $('#fiveplus').css('display','block');
+    localStorage.removeItem('five');
 });
