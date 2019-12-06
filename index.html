@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="container">
+      <!-- Timeblocks go here -->
+      <div class="row">
+        <div class="col"><p>9am</p></div>
+        <textarea id="nine" class="col-9"></textarea>
+        <div id="nineButton" class="col lock">
+          <i id="nineex" class="far fa-times-circle exed"></i>
+          <i id="nineplus" class="fas fa-plus-circle plused"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col"><p>10am</p></div>
+        <textarea id="ten" class="col-9"></textarea>
+        <div id="tenButton" class="col lock">
+          <i id="tenex" class="far fa-times-circle exed"></i>
+          <i id="tenplus" class="fas fa-plus-circle plused"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col"><p>11am</p></div>
+        <textarea id="eleven" class="col-9"></textarea>
+        <div id="elevenButton" class="col lock">
+          <i id="elevenex" class="far fa-times-circle exed"></i>
+          <i id="elevenplus" class="fas fa-plus-circle plused"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col"><p>12pm</p></div>
+        <textarea id="noon" class="col-9"></textarea>
+        <div id="noonButton" class="col lock">
+          <i id="noonex" class="far fa-times-circle exed"></i>
+          <i id="noonplus" class="fas fa-plus-circle plused"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col"><p>1pm</p></div>
+        <textarea id="one" class="col-9"></textarea>
+        <div id="oneButton" class="col lock">
+          <i id="oneex" class="far fa-times-circle exed"></i>
+          <i id="oneplus" class="fas fa-plus-circle plused"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col"><p>2pm</p></div>
+        <textarea id="two" class="col-9"></textarea>
+        <div id="twoButton" class="col lock">
+          <i id="twoex" class="far fa-times-circle exed"></i>
+          <i id="twoplus" class="fas fa-plus-circle plused"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col"><p>3pm</p></div>
+        <textarea id="three" class="col-9"></textarea>
+        <div id="threeButton" class="col lock">
+          <i id="threeex" class="far fa-times-circle exed"></i>
+          <i id="threeplus" class="fas fa-plus-circle plused"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col"><p>4pm</p></div>
+        <textarea id="four" class="col-9"></textarea>
+        <div id="fourButton" class="col lock">
+          <i id="fourex" class="far fa-times-circle exed"></i>
+          <i id="fourplus" class="fas fa-plus-circle plused"></i>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col"><p>5pm</p></div>
+        <textarea id="five" class="col-9"></textarea>
+        <div id="fiveButton" class="col lock">
+          <i id="fiveex" class="far fa-times-circle exed"></i>
+          <i id="fiveplus" class="fas fa-plus-circle plused"></i>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="moment.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
