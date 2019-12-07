@@ -6,6 +6,8 @@ $('#currentDay').text(now.format('dddd, MMMM Do YYYY'));
 
 // block out current hour in the schedule in red and text "current hour"
 
+
+
 // // nine
 $('#nineplus').on('click', function(event) {
     //icon changes on click
