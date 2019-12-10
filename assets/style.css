@@ -121,3 +121,24 @@ textarea{
 .exed {
   display: none;
 }
+
+@media only screen and (max-width: 728px) {
+  .display-3 {
+    font-size: 3.5rem;
+  }
+  .row {
+    white-space: pre-wrap;
+    height: auto;
+    border-top: 1px solid white;
+    margin: 0 auto;
+  }
+
+  .lock {
+    border-radius: 10px;
+    margin: 5px auto 20px auto;
+  }
+
+  textarea {
+    height: 100px;
+  }
+}
