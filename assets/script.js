@@ -5,14 +5,32 @@ let date = moment();
 $('#currentDay').text(date.format('dddd, MMMM Do YYYY'));
 
 // block out current hour in the schedule in red and text "current hour"
-let hour = moment().format('hh');
-let currentHour = $('<p>').val();
-console.log(currentHour);
-// function currentTime {
-//     for (let i = 0; i < ; i++) {
+let curHour = moment().format('H');
 
-//     }
-// }
+$('.col.time').each(function(){
+    let loopHour = $(this).data('hour');
+    let textArea = $(this).siblings('textarea');
+    if ( textArea.length ) {
+        // set value of text area from database
+        let curVal = localStorage.getItem(textArea.attr('id'));
+        if (curVal != null) {
+            textArea.val(curVal);
+        }
+
+        // set color of textarea 
+        if ( curHour == loopHour ) {
+            textArea.addClass('current');
+            textArea.attr('disabled', true);
+        } else if ( loopHour > curHour) {
+            textArea.addClass('coming');
+        } else {
+            textArea.attr('disabled', true);
+        }
+    } else {
+        console.log('text area for ' + loopHour + ' not found');
+    }
+});
+
 
 
 // // nine
@@ -23,9 +41,6 @@ $('#nineplus').on('click', function(event) {
     // add to local storage
     let text = $('#nine').val();
     localStorage.setItem('nine', text);
-    // keep text on refresh
-    // why isn't this working?
-    $('#nine').val(text);
 });
 $('#nineex').on('click', function(event) {
     //icon changes on click
