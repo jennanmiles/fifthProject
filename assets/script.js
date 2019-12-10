@@ -1,11 +1,18 @@
 // pseudo code
 
 // reflect current date in the title
-var now = moment();
-$('#currentDay').text(now.format('dddd, MMMM Do YYYY'));
+let date = moment();
+$('#currentDay').text(date.format('dddd, MMMM Do YYYY'));
 
 // block out current hour in the schedule in red and text "current hour"
+let hour = moment().format('hh');
+let currentHour = $('<p>').val();
+console.log(currentHour);
+// function currentTime {
+//     for (let i = 0; i < ; i++) {
 
+//     }
+// }
 
 
 // // nine
@@ -14,8 +21,11 @@ $('#nineplus').on('click', function(event) {
     $('#nineplus').css('display','none');
     $('#nineex').css('display','block');
     // add to local storage
-    var text = $('#nine').val();
+    let text = $('#nine').val();
     localStorage.setItem('nine', text);
+    // keep text on refresh
+    // why isn't this working?
+    $('#nine').val(text);
 });
 $('#nineex').on('click', function(event) {
     //icon changes on click
@@ -28,7 +38,7 @@ $('#nineex').on('click', function(event) {
 $('#tenplus').on('click', function(event) {
     $('#tenplus').css('display','none');
     $('#tenex').css('display','block');
-    var text = $('#ten').val();
+    let text = $('#ten').val();
     localStorage.setItem('ten', text);
 });
 $('#tenex').on('click', function(event) {
@@ -40,7 +50,7 @@ $('#tenex').on('click', function(event) {
 $('#elevenplus').on('click', function(event) {
     $('#elevenplus').css('display','none');
     $('#elevenex').css('display','block');
-    var text = $('#eleven').val();
+    let text = $('#eleven').val();
     localStorage.setItem('eleven', text);
 });
 $('#elevenex').on('click', function(event) {
@@ -52,7 +62,7 @@ $('#elevenex').on('click', function(event) {
 $('#noonplus').on('click', function(event) {
     $('#noonplus').css('display','none');
     $('#noonex').css('display','block');
-    var text = $('#noon').val();
+    let text = $('#noon').val();
     localStorage.setItem('noon', text);
 });
 $('#noonex').on('click', function(event) {
@@ -64,7 +74,7 @@ $('#noonex').on('click', function(event) {
 $('#oneplus').on('click', function(event) {
     $('#oneplus').css('display','none');
     $('#oneex').css('display','block');
-    var text = $('#one').val();
+    let text = $('#one').val();
     localStorage.setItem('one', text);
 });
 $('#oneex').on('click', function(event) {
@@ -76,7 +86,7 @@ $('#oneex').on('click', function(event) {
 $('#twoplus').on('click', function(event) {
     $('#twoplus').css('display','none');
     $('#twoex').css('display','block');
-    var text = $('#two').val();
+    let text = $('#two').val();
     localStorage.setItem('two', text);
 });
 $('#twoex').on('click', function(event) {
@@ -88,7 +98,7 @@ $('#twoex').on('click', function(event) {
 $('#threeplus').on('click', function(event) {
     $('#threeplus').css('display','none');
     $('#threeex').css('display','block');
-    var text = $('#three').val();
+    let text = $('#three').val();
     localStorage.setItem('three', text);
 });
 $('#threeex').on('click', function(event) {
@@ -100,7 +110,7 @@ $('#threeex').on('click', function(event) {
 $('#fourplus').on('click', function(event) {
     $('#fourplus').css('display','none');
     $('#fourex').css('display','block');
-    var text = $('#four').val();
+    let text = $('#four').val();
     localStorage.setItem('four', text);
 });
 $('#fourex').on('click', function(event) {
@@ -112,7 +122,7 @@ $('#fourex').on('click', function(event) {
 $('#fiveplus').on('click', function(event) {
     $('#fiveplus').css('display','none');
     $('#fiveex').css('display','block');
-    var text = $('#five').val();
+    let text = $('#five').val();
     localStorage.setItem('five', text);
 });
 $('#fiveex').on('click', function(event) {

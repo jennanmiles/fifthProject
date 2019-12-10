@@ -94,6 +94,15 @@ textarea{
   padding: 15px;
   box-sizing: border-box;
 }
+.col-9.passed {
+  background-color: #3F3E3E;
+}
+.col-9.current {
+  background-color: red;
+}
+.col-9.coming {
+  background-color: green;
+}
 
 .lock {
   background-color: teal;
