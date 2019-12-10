@@ -1,7 +1,8 @@
 # fifthProject
+screen shot is in my images folder
 
 ## Overview
-This is my day planner for the fifth homework assignment. A user can add input into to future hours, but no the current hour or the previous ones. They can save to local storage and remove. 
+This is my day planner for the fifth homework assignment. A user can add input into to future hours, but not the current hour or the previous ones. They can save to local storage and remove on click. It is responsive as well.
 
 ## Completed:
 * Responsive design
